@@ -1,0 +1,25 @@
+<p>List Person Phone</p>
+
+<table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Phone</th>
+        <th>Phone Type Id</th>
+        <th>Phone Type Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let phone of phoneNumbers'>
+            <td> {{ phone.id }} </td>
+            <td> {{ phone.phoneNumber }}</td>
+            <td> {{ phone.phoneNumberTypeId }}</td>
+            <td> {{ phone.phoneNumberTypeName }}</td>    
+            <td> 
+                <button>Delete</button>
+                <button>Update</button>            
+            </td>        
+        </tr>
+    </tbody>
+</table>
